@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzchem - Tez kunda</title>
+  <style>
+    :root {
+      --primary-blue: #003366;
+      --primary-green: #66cc33;
+      --light-gray: #f0f4f8;
+      --dark-text: #333333;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-gray);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: var(--dark-text);
+    }
+
+    .container {
+      background: var(--white);
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 550px;
+      width: 100%;
+      border-top: 5px solid var(--primary-blue);
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 25px;
+    }
+
+    .coming-soon {
+      font-size: 2.5em;
+      color: var(--primary-blue);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .contact-section {
+      margin-top: 30px;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 30px;
+    }
+
+    .contact-title {
+      font-size: 1.2em;
+      color: var(--dark-text);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .contact-number {
+      font-size: 1.3em;
+      font-weight: 500;
+      color: var(--dark-text);
+      margin: 10px 0;
+      padding: 15px;
+      background: var(--light-gray);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      display: block;
+    }
+
+    .contact-number:hover {
+      background: var(--primary-green);
+      color: var(--white);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(102, 204, 51, 0.3);
+    }
+
+    .contact-number a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .contact-number a::before {
+      content: '📞';
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 25px;
+      }
+
+      .logo {
+        max-width: 150px;
+      }
+
+      .coming-soon {
+        font-size: 2em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+
+      .contact-number {
+        font-size: 1.1em;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Uzchem Logo" class="logo">
+    <h1 class="coming-soon">Tez kunda...</h1>
+    <p class="subtitle">Yangi veb-saytimiz ustida ishlamoqdamiz.</p>
+
+    <div class="contact-section">
+      <div class="contact-title">Biz bilan bog'laning:</div>
+      <div class="contact-number">
+        <a href="tel:+998712310909">+998 71 231 09 09</a>
+      </div>
+      <div class="contact-number">
+        <a href="tel:+998971575859">+998 97 157 58 59</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
